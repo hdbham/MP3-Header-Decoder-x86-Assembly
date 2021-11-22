@@ -65,7 +65,7 @@ main PROC
 	call Gotoxy
 	call displayRate
 
-	jmp OffACliff ;end
+	jmp toend ;end
 
 	DisplayVersion:
 			;AAAAAAAAAAABBCCDEEEEFFGHIIJJKLMM <------Template
@@ -202,7 +202,7 @@ main PROC
 	call WriteString
 	ret
 
-	offacliff:
+	toend:
 	xor ecx, ecx
 	call ReadChar
 

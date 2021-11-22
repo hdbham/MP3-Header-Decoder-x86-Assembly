@@ -1,4 +1,4 @@
-Microsoft (R) Macro Assembler Version 14.29.30040.0	    11/21/21 20:21:33
+Microsoft (R) Macro Assembler Version 14.29.30040.0	    11/21/21 20:24:29
 CS2810-Assembler-Template.asm				     Page 1 - 1
 
 
@@ -147,7 +147,7 @@ CS2810-Assembler-Template.asm				     Page 1 - 1
  00000045  E8 00000000 E		call Gotoxy
  0000004A  E8 00000089			call displayRate
 
- 0000004F  E9 00000113			jmp OffACliff ;end
+ 0000004F  E9 00000113			jmp toend ;end
 
  00000054				DisplayVersion:
 							;AAAAAAAAAAABBCCDEEEEFFGHIIJJKLMM <------Template
@@ -284,7 +284,7 @@ CS2810-Assembler-Template.asm				     Page 1 - 1
  00000161  E8 00000000 E		call WriteString
  00000166  C3				ret
 
- 00000167				offacliff:
+ 00000167				toend:
  00000167  33 C9			xor ecx, ecx
  00000169  E8 00000000 E		call ReadChar
 
@@ -294,7 +294,7 @@ CS2810-Assembler-Template.asm				     Page 1 - 1
 
  00000175			main ENDP
 				END main
-Microsoft (R) Macro Assembler Version 14.29.30040.0	    11/21/21 20:21:33
+Microsoft (R) Macro Assembler Version 14.29.30040.0	    11/21/21 20:24:29
 CS2810-Assembler-Template.asm				     Symbols 2 - 1
 
 
@@ -519,7 +519,7 @@ main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 00000175 Public 
   b1110  . . . . . . . . . . . .	L Near	 00000153 _TEXT	
   rsv  . . . . . . . . . . . . .	L Near	 0000015A _TEXT	
   DisplayString  . . . . . . . .	L Near	 00000161 _TEXT	
-  offacliff  . . . . . . . . . .	L Near	 00000167 _TEXT	
+  toend  . . . . . . . . . . . .	L Near	 00000167 _TEXT	
 printf . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
 scanf  . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
 wsprintfA  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
