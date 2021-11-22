@@ -1,4 +1,3 @@
-TITLE CS2810 Assembler Template
 
 ; Hunter Burningham:
 ; 11/21/2021:
@@ -7,9 +6,6 @@ INCLUDE Irvine32.inc
 .data
 	;--------- Enter Data Here
 
-	vName Byte "Hunter Burningham",0
-	vSemester byte "CS2810 Fall Semester 2021",0
-	vAssignment byte "Assembler Assignment #3",0
 	vPrompt byte "Please enter an MP3 frame header in Hex",0
 
 	vMpeg00 byte "MPEG Version 2.5",0
@@ -41,24 +37,6 @@ INCLUDE Irvine32.inc
 main PROC
 	;--------- Enter Code Below Here
 	call clrscr
-	
-	mov dh, 12
-	mov dl, 12
-	call Gotoxy
-	mov edx, OFFSET vSemester
-	call writeString
-
-	mov dh, 13
-	mov dl, 12
-	call Gotoxy
-	mov edx, OFFSET vAssignment
-	call writeString
-
-	mov dh, 14
-	mov dl, 12
-	call Gotoxy
-	mov edx, OFFSET vName
-	call writeString
 
 	mov dh, 16
 	mov dl, 12
